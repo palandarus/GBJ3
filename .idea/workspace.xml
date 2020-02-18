@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e24258b3-68d9-408d-913b-6d339b46007d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GBJ3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/src/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/src/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/src/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/src/Orange.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Xyofpj9TiDM9EOWxWHnite33ge" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e24258b3-68d9-408d-913b-6d339b46007d" name="Default Changelist" comment="" />
+      <created>1582027800124</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582027800124</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="521" y="199" key="#Project_Structure" timestamp="1582027934887">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="199" key="#Project_Structure/0.0.1858.1080@0.0.1858.1080" timestamp="1582027934887" />
+    <state x="734" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1582028470873">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="734" y="250" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1582028470873" />
+    <state x="583" y="135" key="CommitChangelistDialog2" timestamp="1582028792878">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="583" y="135" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1582028792878" />
+    <state x="709" y="282" key="FileChooserDialogImpl" timestamp="1582027877882">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="709" y="282" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1582027877882" />
+    <state x="409" y="115" key="SettingsEditor" timestamp="1582027905800">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="409" y="115" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1582027905800" />
+    <state x="312" y="161" key="new project wizard" timestamp="1582027930124">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="312" y="161" key="new project wizard/0.0.1858.1080@0.0.1858.1080" timestamp="1582027930124" />
+  </component>
+</project>
