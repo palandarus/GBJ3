@@ -10,5 +10,48 @@
             f. Написать метод, который позволяет пересыпать фрукты из текущей коробки в другую коробку(помним про сортировку фруктов, нельзя яблоки высыпать в коробку с апельсинами), соответственно в текущей коробке фруктов не остается, а в другую перекидываются объекты, которые были в этой коробке;
             g. Не забываем про метод добавления фрукта в коробку.*/
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Main {
+    private Box<? extends Fruit> box;
+
+    public static void main(String[] args) {
+        Box<Apple> appleBox=new Box<>();
+        Box<Orange> orangeBox=new Box<>();
+        appleBox.putIn(new Apple());
+        orangeBox.putIn(new Orange());
+        addAppleRandomArray(appleBox);
+        addOrangeRandomArray(orangeBox);
+        appleBox.putOutLast();
+        orangeBox.putOutLast();
+        System.out.println(appleBox.compare(orangeBox));
+        Box<Apple> appleBox2=new Box<>();
+        Box<Orange> orangeBox2=new Box<>();
+        orangeBox2.putIn(new Orange());
+        orangeBox2.putIn(new Orange());
+        appleBox2.putIn(new Apple());
+        appleBox2.putIn(new Apple());
+        appleBox2.putIn(new Apple());
+        System.out.println(appleBox2.compare(orangeBox2));
+    }
+
+    public static void addAppleRandomArray(Box<Apple> box){
+        ArrayList<Apple> arrayList=new ArrayList<>();
+        int size=(int)(Math.random()*1000);
+        for (int i = 0; i < size; i++) {
+            arrayList.add(new Apple());
+        }
+        box.putIn(arrayList);
+    }
+
+    public static void addOrangeRandomArray(Box<Orange> box){
+        ArrayList<Orange> arrayList=new ArrayList<>();
+        int size=(int)(Math.random()*1000);
+        for (int i = 0; i < size; i++) {
+            arrayList.add(new Orange());
+        }
+        box.putIn(arrayList);
+    }
+
 }

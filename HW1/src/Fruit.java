@@ -1,6 +1,7 @@
-abstract class Fruit {
-    Float weight;
-    public Fruit(Float weight) {
-        this.weight=weight;
+class Fruit {
+   protected Float weight;
+
+    public Float getWeight(){
+        return weight;
     }
 }
