@@ -1,7 +1,4 @@
-class Fruit {
-   protected Float weight;
-
-    public Float getWeight(){
-        return weight;
-    }
+ abstract class Fruit {
+    protected Float weight;
+    public abstract Float getWeight();
 }

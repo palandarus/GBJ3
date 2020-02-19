@@ -12,13 +12,14 @@
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     private Box<? extends Fruit> box;
 
     public static void main(String[] args) {
-        Box<Apple> appleBox=new Box<>();
-        Box<Orange> orangeBox=new Box<>();
+        Box<Apple> appleBox = new Box<>();
+        Box<Orange> orangeBox = new Box<>();
         appleBox.putIn(new Apple());
         orangeBox.putIn(new Orange());
         addAppleRandomArray(appleBox);
@@ -26,32 +27,48 @@ public class Main {
         appleBox.putOutLast();
         orangeBox.putOutLast();
         System.out.println(appleBox.compare(orangeBox));
-        Box<Apple> appleBox2=new Box<>();
-        Box<Orange> orangeBox2=new Box<>();
+        Box<Apple> appleBox2 = new Box<>();
+        Box<Orange> orangeBox2 = new Box<>();
         orangeBox2.putIn(new Orange());
         orangeBox2.putIn(new Orange());
         appleBox2.putIn(new Apple());
         appleBox2.putIn(new Apple());
         appleBox2.putIn(new Apple());
         System.out.println(appleBox2.compare(orangeBox2));
+        appleBox.putInOtherBox(appleBox2);
+        Apple[] apples = {new Apple(), new Apple(), new Apple(), new Apple()};
+        replace(apples, 0, 3);
+        ArrayList<Apple> appleArrayList = getArrayList(apples);
+        System.out.println(appleArrayList);
     }
 
-    public static void addAppleRandomArray(Box<Apple> box){
-        ArrayList<Apple> arrayList=new ArrayList<>();
-        int size=(int)(Math.random()*1000);
+    public static void addAppleRandomArray(Box<Apple> box) {
+        ArrayList<Apple> arrayList = new ArrayList<>();
+        int size = (int) (Math.random() * 1000);
         for (int i = 0; i < size; i++) {
             arrayList.add(new Apple());
         }
         box.putIn(arrayList);
     }
 
-    public static void addOrangeRandomArray(Box<Orange> box){
-        ArrayList<Orange> arrayList=new ArrayList<>();
-        int size=(int)(Math.random()*1000);
+    public static void addOrangeRandomArray(Box<Orange> box) {
+        ArrayList<Orange> arrayList = new ArrayList<>();
+        int size = (int) (Math.random() * 1000);
         for (int i = 0; i < size; i++) {
             arrayList.add(new Orange());
         }
         box.putIn(arrayList);
     }
 
+    public static <T> void replace(T[] array, int i, int j) {
+        T temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+
+    public static <T> ArrayList<T> getArrayList(T[] array) {
+        return new ArrayList<>(Arrays.asList(array));
+    }
 }
+
+
