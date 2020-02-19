@@ -18,8 +18,8 @@ public class Main {
     private Box<? extends Fruit> box;
 
     public static void main(String[] args) {
-        Box<Apple> appleBox = new Box<>();
-        Box<Orange> orangeBox = new Box<>();
+        Box appleBox = new Box<>();
+        Box orangeBox = new Box<>();
         appleBox.putIn(new Apple());
         orangeBox.putIn(new Orange());
         addAppleRandomArray(appleBox);
@@ -36,10 +36,14 @@ public class Main {
         appleBox2.putIn(new Apple());
         System.out.println(appleBox2.compare(orangeBox2));
         appleBox.putInOtherBox(appleBox2);
+        appleBox.putInOtherBox(orangeBox);
         Apple[] apples = {new Apple(), new Apple(), new Apple(), new Apple()};
         replace(apples, 0, 3);
         ArrayList<Apple> appleArrayList = getArrayList(apples);
         System.out.println(appleArrayList);
+        Box box=new Box();
+        box.putIn(new Orange());
+        box.putIn(new Apple());
     }
 
     public static void addAppleRandomArray(Box<Apple> box) {

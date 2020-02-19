@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -13,12 +15,28 @@ public class Box<T extends Fruit> {
     }
 
     public void putIn(T t) {
-        arrayList.add(t);
+        if (arrayList.isEmpty()) arrayList.add(t);
+        else {
+            if (isSameTypeFruit(t)) arrayList.add(t);
+            else System.out.println("Wrong type of fruit, need " + arrayList.get(0).getClass().getName() +
+                    " and this is an " + t.getClass().getName());
+        }
 
     }
 
-    public void putIn(Box<T> array) {
-    arrayList.addAll(array.getArrayList());
+    public boolean isSameTypeFruit(T t) {
+        return arrayList.get(0).getClass().equals(t.getClass());
+    }
+
+    public boolean putIn(Box<T> box) {
+        if (isSameTypeFruit(box.getArrayList().get(0))) {
+            arrayList.addAll(box.getArrayList());
+            return true;
+        } else {
+            System.out.println("Wrong type of fruit, need " + arrayList.get(0).getClass().getName() +
+                    " and this is an " + box.getArrayList().get(0).getClass().getName());
+            return false;
+        }
     }
 
     public void putIn(ArrayList<T> arrayList) {
@@ -31,11 +49,6 @@ public class Box<T extends Fruit> {
 
     public void putOutLast() {
         arrayList.remove(arrayList.size() - 1);
-    }
-
-
-    public void putOut(Box<T> array) {
-
     }
 
     public boolean compare(Box box) {
@@ -53,8 +66,9 @@ public class Box<T extends Fruit> {
     }
 
     public void putInOtherBox(Box<T> box) {
-        box.putIn(this);
-        empty();
+        if (!arrayList.isEmpty()) {
+            if (box.putIn(this)) empty();
+        } else System.out.println("Коробку пуста, нечего перекладывать");
     }
 
     public ArrayList<T> getArrayList() {
