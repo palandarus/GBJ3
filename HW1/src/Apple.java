@@ -4,7 +4,8 @@ public class Apple extends Fruit {
     public Apple() {
         this.weight = 1.0f;
         number++;
-        name = "Яблоко № " + number;
+        classname="Яблоко";
+        name = classname+" № " + number;
     }
 
     @Override
