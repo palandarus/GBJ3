@@ -1,7 +1,7 @@
 public class Apple extends Fruit {
     static int number=0;
     public Apple() {
-        name="Яблоко";
+        name="Яблоко № "+number;
         this.weight=1.0f;
         number++;
     }
