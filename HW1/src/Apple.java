@@ -1,9 +1,10 @@
 public class Apple extends Fruit {
-    static int number=0;
+    static int number = 0;
+
     public Apple() {
-        name="Яблоко № "+number;
-        this.weight=1.0f;
+        this.weight = 1.0f;
         number++;
+        name = "Яблоко № " + number;
     }
 
     @Override

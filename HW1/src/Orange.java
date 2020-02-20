@@ -1,9 +1,10 @@
 public class Orange extends Fruit {
-    static int number=0;
+    static int number = 0;
+
     public Orange() {
-        name="Апельсин";
-        this.weight=1.5f;
+        this.weight = 1.5f;
         number++;
+        name = "Апельсин № " + number;
     }
 
     @Override
