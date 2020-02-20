@@ -40,7 +40,7 @@ public class Main {
         Apple[] apples = {new Apple(), new Apple(), new Apple(), new Apple()};
         replace(apples, 0, 3);
         ArrayList<Apple> appleArrayList = getArrayList(apples);
-        System.out.println(appleArrayList);
+//        System.out.println(appleArrayList);
         Box box=new Box();
         box.putIn(new Orange());
         box.putIn(new Apple());

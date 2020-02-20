@@ -18,8 +18,8 @@ public class Box<T extends Fruit> {
         if (arrayList.isEmpty()) arrayList.add(t);
         else {
             if (isSameTypeFruit(t)) arrayList.add(t);
-            else System.out.println("Wrong type of fruit, need " + arrayList.get(0).getClass().getName() +
-                    " and this is an " + t.getClass().getName());
+            else System.out.println("Вы пытаетесь положить не тот тип фрукта - надо " + arrayList.get(0) +
+                    ", а это " + t);
         }
 
     }
@@ -33,8 +33,8 @@ public class Box<T extends Fruit> {
             arrayList.addAll(box.getArrayList());
             return true;
         } else {
-            System.out.println("Wrong type of fruit, need " + arrayList.get(0).getClass().getName() +
-                    " and this is an " + box.getArrayList().get(0).getClass().getName());
+            System.out.println("Вы пытаетесь пересыпать коробку с "+ box.getArrayList().get(0).getClass().getName()+ "ами " +", а это коробка с "+ arrayList.get(0).getClass().getName()+ "ами ") ;
+            ;
             return false;
         }
     }
