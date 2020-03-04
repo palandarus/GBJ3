@@ -23,7 +23,7 @@ public class MainClass {
              ) {
             System.out.println("Победитель - "+car.getName());
         }
-        
+
         for (int i = 0; i < cars.length; i++) {
             if(!cars[i].isFinished()) System.out.println("Участник "+cars[i].getName()+" не смог закончить гонку");
         }

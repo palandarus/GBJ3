@@ -32,7 +32,6 @@ public class Race {
                 winnerList.add(winner);
                 lock.unlock();
         }
-
     }
 
 
