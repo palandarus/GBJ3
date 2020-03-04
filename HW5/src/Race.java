@@ -26,14 +26,16 @@ public class Race {
     }
 
     public void setWinner(Car winner) {
-            if (!hasWinner) {
-                winner.calculateRaceTime();
-                lock.lock();
-                hasWinner = true;
-                winnerList.add(winner);
-                lock.unlock();
+
+        if (!hasWinner) {
+            winner.calculateRaceTime();
+            lock.lock();
+            hasWinner = true;
+            winnerList.add(winner);
+            lock.unlock();
         }
-            else winner.calculateRaceTime();
+        else winner.calculateRaceTime();
+
     }
 
 
