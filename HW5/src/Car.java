@@ -1,4 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
+
 
 public class Car implements Runnable {
     private static int CARS_COUNT;
@@ -20,12 +20,14 @@ public class Car implements Runnable {
         return speed;
     }
 
+
     public Car(Race race, int speed) {
         this.race = race;
         this.speed = speed;
         CARS_COUNT++;
         this.name = "Участник #" + CARS_COUNT;
     }
+
 
     @Override
     public void run() {
@@ -54,3 +56,4 @@ public class Car implements Runnable {
         return finished;
     }
 }
+
