@@ -3,6 +3,7 @@
 public class Car implements Runnable {
     private static int CARS_COUNT;
     private boolean finished=false;
+    long racetime, starttime,endtime;
 
     static {
         CARS_COUNT = 0;
@@ -44,6 +45,7 @@ public class Car implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        starttime=System.currentTimeMillis();
         for (int i = 0; i < race.getStages().size(); i++) {
             race.getStages().get(i).go(this);
         }
@@ -55,6 +57,18 @@ public class Car implements Runnable {
     }
     public boolean isFinished(){
         return finished;
+    }
+
+    public void calculateRaceTime(){
+        endtime=System.currentTimeMillis();
+        racetime=endtime-starttime;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
 
