@@ -48,9 +48,10 @@ public class Car implements Runnable {
             race.getStages().get(i).go(this);
         }
         race.setWinner(this);
-        race.endCD.countDown();
         System.out.println(this.name + " пересек финишную черту");
         finished=true;
+        race.endCD.countDown();
+
     }
     public boolean isFinished(){
         return finished;
